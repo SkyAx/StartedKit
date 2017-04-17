@@ -42,7 +42,7 @@ gulp.task('browser-sync', function () {
    });
 });
 
-gulp.task('css-libs', ['fontawesome', 'less'], function () {
+gulp.task('css-libs', ['less'], function () {
    return gulp.src('app/css/libs.css')
        .pipe(cssnano())
        .pipe(rename({suffix: '.min'}))
