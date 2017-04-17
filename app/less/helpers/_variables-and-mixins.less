@@ -1,0 +1,55 @@
+/////////////////
+////VARIABLES////
+/////////////////
+
+//COLORS//
+@white: rgb(255, 255, 255);
+@white-rgba-7: rgba(255, 255, 255, .7);
+@white-rgba-4: rgba(255, 255, 255, .4);
+
+@black: rgb(0, 0, 0);
+@black-rgba-7: rgba(0, 0, 0, .7);
+@black-rgba-4: rgba(0, 0, 0, .4);
+@black-rgba-2: rgba(0, 0, 0, .2);
+
+/////////////////
+/////MIXINS//////
+/////////////////
+
+.transform(@transforms) {
+  transform: @transforms;
+}
+
+.rotate(@deg) {
+  .transform(rotate(@deg));
+}
+
+.scale(@scale) {
+  .transform(scale(@scale));
+}
+
+.scale(@x, @y) {
+  .transform(scale(@x, @y));
+}
+
+.translate(@x, @y) {
+  .transform(translate(@x, @y));
+}
+
+.skew(@xdeg, @ydeg) {
+  .transform(skew(@xdeg, @ydeg));
+}
+
+.transform-origin(@origin) {
+  transform-origin: @origin;
+}
+
+.transition(@transition) {
+  transition: @transition;
+}
+
+.transition(@transition, @transition-two) {
+  transition: @transition, @transition-two;
+}
+
+

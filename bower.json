@@ -1,0 +1,18 @@
+{
+  "name": "StartedKit", //change it (поменять)
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "SkyAx" //change it (поменять)
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/SkyAx/StartedKit", //change it (поменять)
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ]
+}
